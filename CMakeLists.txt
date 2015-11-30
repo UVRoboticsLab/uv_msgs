@@ -45,6 +45,7 @@ find_package(catkin REQUIRED std_msgs message_generation)
    ImagePoint.msg
    ImageBoundingBox.msg
    FacesDetected.msg
+   ptuControlParams.msg
  )
 
 ## Generate services in the 'srv' folder

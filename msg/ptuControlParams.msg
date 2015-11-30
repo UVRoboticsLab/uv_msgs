@@ -1,0 +1,14 @@
+std_msgs/Header header
+string hardware_id
+string status
+string controller
+string mode
+string based_on
+bool xplor_on
+float32 processFreq 
+float32 panHome
+float32 tiltHome
+float32 time2Stop
+float32 time2Home
+float32 time2Xplor
+float32 exploringWaiting
