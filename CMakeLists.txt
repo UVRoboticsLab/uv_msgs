@@ -46,6 +46,7 @@ find_package(catkin REQUIRED std_msgs message_generation)
    ImageBoundingBox.msg
    ImageContour.msg
    PtuControlParams.msg
+   ImagePointListStamped.msg
    ImageBoundingBoxListStamped.msg
    ImageContourListStamped.msg
  )
