@@ -4,7 +4,7 @@ project(uv_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED std_msgs geometry_msgs message_generation)
+find_package(catkin REQUIRED std_msgs geometry_msgs shape_msgs sensor_msgs message_generation)
 
 ## System dependencies are found with CMake's conventions
 #find_package(Boost REQUIRED COMPONENTS system)
@@ -51,6 +51,10 @@ find_package(catkin REQUIRED std_msgs geometry_msgs message_generation)
    ImageContourListStamped.msg
    Regions.msg
    MapRegions.msg
+   Object.msg
+   ObjectPointCloud.msg
+   ObjectMesh.msg
+   ObjectsDetected.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -71,7 +75,9 @@ find_package(catkin REQUIRED std_msgs geometry_msgs message_generation)
 generate_messages(
    DEPENDENCIES
    std_msgs 
-   geometry_msgs # Or other packages containing msgs
+   geometry_msgs 
+   sensor_msgs
+   shape_msgs # Or other packages containing msgs
  )
 
 ###################################
