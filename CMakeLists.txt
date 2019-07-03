@@ -55,6 +55,8 @@ find_package(catkin REQUIRED std_msgs geometry_msgs shape_msgs sensor_msgs messa
    ObjectPointCloud.msg
    ObjectMesh.msg
    ObjectsDetected.msg
+   HistogramStamped.msg
+   Histogram2DStamped.msg
  )
 
 ## Generate services in the 'srv' folder
